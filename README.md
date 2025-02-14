@@ -1,6 +1,6 @@
 # Hi there, I'm Asim Ghaffar 👋
 
-### Dynamic and detail-oriented Software Engineer with a passion for crafting high-quality, scalable, and efficient software solutions. My expertise lies in React.js, Next.js, JavaScript, and TypeScript, with hands-on experience in Docker, Tailwind CSS, Ant Design, and cloud services like Microsoft Azure.
+#### Dynamic and detail-oriented Software Engineer with a passion for crafting high-quality, scalable, and efficient software solutions. My expertise lies in React.js, Next.js, JavaScript, and TypeScript, with hands-on experience in Docker, Tailwind CSS, Ant Design, and cloud services like Microsoft Azure.
 
 #### 🚀 About Me
 
@@ -12,13 +12,16 @@
 
 💻 Previous Experience: Trainee Consultant at Systems Limited, Front-End Developer at Falcon IT Consulting
 
-#### 🛠️ Skills
+### 🛠️ **Skills**
 
-Frontend: React.js, Next.js, JavaScript (ES6+), TypeScript, Tailwind CSS, Ant Design, MUI
+- **Frontend Development:**  
+  - React.js, Next.js, JavaScript (ES6+), TypeScript, Tailwind CSS, Ant Design, MUI  
 
-Tools & Platforms: Docker, Git & GitHub, VS Code, Microsoft Azure, Firebase
+- **Tools & Platforms:**  
+  - Docker, Git & GitHub, VS Code, Microsoft Azure, Firebase  
 
-Databases: MongoDB, PostgreSQL
+- **Databases:**  
+  - MongoDB, PostgreSQL  
 
 #### 📫 Get in Touch
 
