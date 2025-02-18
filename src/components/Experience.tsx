@@ -46,6 +46,7 @@ const Experience = () => {
         <div className="max-w-3xl mx-auto">
           <Timeline
             mode="alternate"
+            className="hidden sm:flex flex-col"
             items={experiences.map((exp, index) => ({
               children: (
                 <motion.div
@@ -53,9 +54,11 @@ const Experience = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow"
+                  className="bg-white p-4 sm:p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow"
                 >
-                  <h3 className="text-xl font-semibold">{exp.title}</h3>
+                  <h3 className="text-lg sm:text-xl font-semibold">
+                    {exp.title}
+                  </h3>
                   <p className="text-primary font-medium">{exp.company}</p>
                   <p className="text-text-secondary text-sm mb-2">
                     {exp.period}
@@ -66,6 +69,24 @@ const Experience = () => {
               dot: <Briefcase className="text-primary" />,
             }))}
           />
+          {/* Fallback for mobile */}
+          <div className="sm:hidden space-y-4">
+            {experiences.map((exp, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow"
+              >
+                <h3 className="text-lg font-semibold">{exp.title}</h3>
+                <p className="text-primary font-medium">{exp.company}</p>
+                <p className="text-text-secondary text-sm mb-2">{exp.period}</p>
+                <p className="text-text-secondary">{exp.description}</p>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
