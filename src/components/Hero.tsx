@@ -4,10 +4,18 @@ import { Github, Linkedin, Mail } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const Hero = () => {
-  const handleDownload = () => {
+  const handleDownloadCv = () => {
     const link = document.createElement("a");
     link.href = "/document/Cv.pdf";
     link.download = "Cv.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+  const handleDownloadResume = () => {
+    const link = document.createElement("a");
+    link.href = "/document/Resume.pdf";
+    link.download = "Resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -67,13 +75,22 @@ const Hero = () => {
               that users love.
             </p>
             <p className="text-xl text-primary mb-4">2+ Years of Experience</p>
-            <Button
-              onClick={handleDownload}
-              size="large"
-              className="mb-4 bg-blue-500 text-white"
-            >
-              Download Resume
-            </Button>
+            <div className="flex gap-4">
+              <Button
+                onClick={handleDownloadResume}
+                size="large"
+                className="mb-4 bg-blue-500 text-white"
+              >
+                Download Resume
+              </Button>
+              <Button
+                onClick={handleDownloadCv}
+                size="large"
+                className="mb-4 bg-blue-500 text-white"
+              >
+                Download CV
+              </Button>
+            </div>
             <div className="flex space-x-4">
               <a
                 href="https://github.com/Mr-AsimGhaffar"
