@@ -1,0 +1,127 @@
+{
+  "profile": {
+    "name": "Asim Ghaffar",
+    "title": "Front End Developer",
+    "experience": "2+ Years of Experience",
+    "description": "A passionate Front-End Developer building modern web applications that users love."
+  },
+  "documents": {
+    "cv": "/document/Cv.pdf",
+    "resume": "/document/Resume.pdf"
+  },
+  "images": {
+    "background": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80",
+    "profile": "/images/picture.jpg"
+  },
+  "socialLinks": {
+    "github": "https://github.com/Mr-AsimGhaffar",
+    "linkedin": "https://www.linkedin.com/in/asim-ghaffar-4a60921b1/",
+    "email": "mailto:asim.ghaffar71@gmail.com"
+  },
+  "skills": [
+    {
+      "icon": "Code2",
+      "title": "Frontend Development",
+      "description": "I am a frontend developer with expertise in React.js, Next.js, JavaScript, and TypeScript, building responsive and dynamic web applications. Skilled in modern tools and frameworks like Tailwind CSS, Ant Design, MUI, ShadCN, Docker, ESLint, Husky, and version control with Git & GitHub."
+    },
+    {
+      "icon": "Globe",
+      "title": "Cloud Services",
+      "description": "Deploying and managing applications on AWS"
+    }
+  ],
+  "technicalSkills": [
+    "React Js",
+    "Next Js",
+    "JavaScript",
+    "TypeScript",
+    "EsLint",
+    "Husky",
+    "Docker",
+    "TailwindCss",
+    "MUI",
+    "Ant Design",
+    "ShadCN/ui",
+    "Git & GitHub"
+  ],
+  "about": {
+    "title": "About Me",
+    "description": "Dynamic and detail-oriented Software Engineer with expertise in React.js, Next.js, and JavaScript, TypeScript, seeking to leverage innovative solutions and robust coding practices to contribute to impactful projects and enhance user experiences. Passionate about delivering high-quality, scalable, and efficient software solutions in a collaborative team environment."
+  },
+  "experiences": {
+    "title": "Experience",
+    "description": "My professional journey in software development",
+    "projectsList": [
+      {
+        "title": "Front End Developer",
+        "company": "Ali Square",
+        "period": "Feb-2024 - Present",
+        "description": "Experienced Frontend Developer specializing in building scalable and high-performance web applications using Next.js, React.js, and TypeScript. Proficient in Docker and AWS for seamless deployment and cloud management, with a strong focus on responsive design, user experience, and modern web standards."
+      },
+      {
+        "title": "Trainee Consultant",
+        "company": "Systems Limited",
+        "period": "Oct-2022 - Feb-2024",
+        "description": "Frontend Developer with expertise in Next.js, React.js, JavaScript, and TypeScript, delivering dynamic and efficient web solutions. Skilled in deploying and managing applications using Docker and AWS, ensuring robust, scalable, and secure applications in cloud environments."
+      },
+      {
+        "title": "Front-End Developer",
+        "company": "Falcon IT Consulting",
+        "period": "Feb-2022 - Oct-2022",
+        "description": "Frontend Developer adept at crafting modern web applications with Next.js, React.js, and TypeScript. Experienced in using Docker for containerization and AWS for cloud deployments, ensuring optimized performance, scalability, and smooth user experiences across all platforms."
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "description": "Here are some of my recent projects that showcase my skills and experience",
+    "list": [
+      {
+        "title": "E-commerce Platform",
+        "description": "A full-featured e-commerce platform built with NextJs, TypeScript, and MongoDB.",
+        "image": "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&w=800&q=80",
+        "tags": ["NextJs", "TypeScript", "MongoDB"],
+        "github": "https://github.com/Mr-AsimGhaffar/nextjs-ecommerce-store"
+      },
+      {
+        "title": "Property Website",
+        "description": "A property search platform that allows users to search for properties, view detailed information, and analyze property trends powered by AI models",
+        "image": "/images/zameenDashboard.png",
+        "tags": ["ReactJs", "JavaScript", "Context Api", "Tailwind CSS"],
+        "github": "https://github.com/Mr-AsimGhaffar/project"
+      },
+      {
+        "title": "Rider Pro",
+        "description": "Developed a comprehensive Rent-A-Car platform that streamlines car rental and ridesharing services. The platform offers an intuitive user interface for viewing and booking",
+        "image": "/images/riderPro.jpg",
+        "tags": ["NextJs", "TypeScript", "TailwindCss", "Docker"],
+        "github": "https://github.com/Mr-AsimGhaffar/ueber_Pro"
+      },
+      {
+        "title": "BrainBash",
+        "description": "BrainBash is an interactive quiz app that allows users to play quizzes by selecting subjects and create their own quizzes.",
+        "image": "/images/science.png",
+        "tags": ["NextJs", "TypeScript", "TailwindCss"],
+        "github": "https://github.com/Mr-AsimGhaffar/BrainBashAdmin"
+      },
+      {
+        "title": "Hadith Chat",
+        "description": "Hadith Chat is an AI-powered platform where users can ask for any ahadis and receive accurate and context-aware responses. Designed to provide easy access to authentic Islamic teachings, Hadith Chat allows users to explore and inquire about hadiths, enhancing their knowledge and understanding",
+        "image": "https://images.unsplash.com/photo-1592210454359-9043f067919b?auto=format&fit=crop&w=800&q=80",
+        "tags": ["Html", "Css"]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subTitle": "Have a question or want to work together? Feel free to reach out!",
+    "email": "asim.ghaffar71@gmail.com",
+    "subject": "New Contact Form Submission",
+    "messages": {
+      "nameRequired": "Please enter your name",
+      "emailRequired": "Please enter your email",
+      "emailInvalid": "Please enter a valid email",
+      "messageRequired": "Please enter your message"
+    }
+  }
+}

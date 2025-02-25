@@ -25,7 +25,7 @@ const Navbar = () => {
           const rect = element.getBoundingClientRect();
 
           // Check if the section is in the viewport
-          if (rect.top <= 100 && rect.bottom >= 100) {
+          if (rect.top <= 120 && rect.bottom >= 100) {
             currentSection = section;
           }
         }

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Form, Input, Button } from "antd";
 import { Mail, MessageSquare, Send } from "lucide-react";
+import contactData from "../data/data.json";
 
 interface ContactFormValues {
   name: string;
@@ -12,7 +13,11 @@ const Contact = () => {
   const [form] = Form.useForm<ContactFormValues>();
 
   const onFinish = async (values: ContactFormValues) => {
-    const mailtoLink = `mailto:asim.ghaffar71@gmail.com?subject=New Contact Form Submission&body=Name: ${encodeURIComponent(
+    const mailtoLink = `mailto:${
+      contactData.contact.email
+    }?subject=${encodeURIComponent(
+      contactData.contact.subject
+    )}&body=Name: ${encodeURIComponent(
       values.name
     )}%0AEmail: ${encodeURIComponent(
       values.email
@@ -31,9 +36,11 @@ const Contact = () => {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold mb-4">Get In Touch</h2>
+          <h2 className="text-4xl font-bold mb-4">
+            {contactData.contact.title}
+          </h2>
           <p className="text-text-secondary max-w-2xl mx-auto">
-            Have a question or want to work together? Feel free to reach out!
+            {contactData.contact.subTitle}
           </p>
         </motion.div>
 
@@ -53,7 +60,12 @@ const Contact = () => {
             >
               <Form.Item
                 name="name"
-                rules={[{ required: true, message: "Please enter your name" }]}
+                rules={[
+                  {
+                    required: true,
+                    message: contactData.contact.messages.nameRequired,
+                  },
+                ]}
               >
                 <Input
                   prefix={
@@ -67,8 +79,14 @@ const Contact = () => {
               <Form.Item
                 name="email"
                 rules={[
-                  { required: true, message: "Please enter your email" },
-                  { type: "email", message: "Please enter a valid email" },
+                  {
+                    required: true,
+                    message: contactData.contact.messages.emailRequired,
+                  },
+                  {
+                    type: "email",
+                    message: contactData.contact.messages.emailInvalid,
+                  },
                 ]}
               >
                 <Input
@@ -81,7 +99,10 @@ const Contact = () => {
               <Form.Item
                 name="message"
                 rules={[
-                  { required: true, message: "Please enter your message" },
+                  {
+                    required: true,
+                    message: contactData.contact.messages.messageRequired,
+                  },
                 ]}
               >
                 <Input.TextArea
