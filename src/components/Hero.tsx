@@ -70,7 +70,10 @@ const Hero = () => {
             <div className="flex gap-4">
               <Button
                 onClick={() =>
-                  handleDownload(data.documents.resume, "Resume.pdf")
+                  handleDownload(
+                    data.documents.resume,
+                    "Asim_Ghaffar_Resume.pdf"
+                  )
                 }
                 size="large"
                 className="mb-4 bg-blue-500 text-white"
@@ -78,7 +81,9 @@ const Hero = () => {
                 Download Resume
               </Button>
               <Button
-                onClick={() => handleDownload(data.documents.cv, "Cv.pdf")}
+                onClick={() =>
+                  handleDownload(data.documents.cv, "Asim_Ghaffar_Cv.pdf")
+                }
                 size="large"
                 className="mb-4 bg-blue-500 text-white"
               >
